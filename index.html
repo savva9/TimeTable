@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://sortablejs.github.io/Sortable/Sortable.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div>
+            <ul class="short-week-days">
+                <li class="selected-short-day" id = "i0">ПН</li>
+                <li id="i1">ВТ</li>
+                <li id="i2">СР</li>
+                <li id="i3">ЧТ</li>
+                <li id="i4">ПТ</li>
+                <li id="i5">СБ</li>
+                <li id="i6">ВС</li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="swipe-days">
+                <img src="img/leftArrow.svg" alt="" class="leftArrow">
+                <span class="main-current-day">ПОНЕДЕЛЬНИК</span>
+                <img src="img/rightArrow.svg" alt="" class="rightArrow">
+            </div>
+        </div>
+
+        <div class="tasks">
+            <div class="mondayTasks current-day" id="tasks">
+                <div class="task">
+                    <img src="img/drag.svg" alt="" class="handle">
+                    <span>1</span>
+                    <input type="time" name="" id="" value="08:00" class="time">
+                    <input type="" class="inputTask">
+                    <img src="img/delete.svg" alt="" class="delete">
+                </div>
+            </div>
+            <img src="img/add.svg" alt="" class="addTask">
+        </div>
+        <button class="save">Сохранить</button>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
